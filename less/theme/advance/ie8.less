@@ -1,0 +1,82 @@
+/*redundant IE8 duplication of Media Query:*/
+
+/* Opaque screen cover */
+.ie8 .overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 49;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYxIDY0LjE0MDk0OSwgMjAxMC8xMi8wNy0xMDo1NzowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNS4xIFdpbmRvd3MiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6RjhENzQwMDVGNDNBMTFFMkI4MTdENjlBQUQzREE1Q0UiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6RjhENzQwMDZGNDNBMTFFMkI4MTdENjlBQUQzREE1Q0UiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpGOEQ3NDAwM0Y0M0ExMUUyQjgxN0Q2OUFBRDNEQTVDRSIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpGOEQ3NDAwNEY0M0ExMUUyQjgxN0Q2OUFBRDNEQTVDRSIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PhgkXc0AAAAlSURBVHjaYvz///9+BioCJgYqg1EDRw0cNXDUwFEDh4qBAAEGAB8GA+RcI2/oAAAAAElFTkSuQmCC);
+}
+
+/* tooltips */
+.ie8 .has_tooltip {
+    position: relative;
+    overflow: visible;
+}
+
+.ie8 .has_tooltip:hover {
+    z-index: 1;
+}
+
+.ie8 .tooltip {
+    position: absolute;
+    z-index: 2;
+    top: 110%;
+    left: 50%;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    width: 1px;
+    height: 1px;
+    margin-left: -50%;
+    padding: 10px 15px;
+    cursor: default;
+    color: #fff;
+    font-family: Helvetica, Arial, sans-serif;
+    .font-size(14px);
+    text-align: center;
+    white-space: nowrap;
+    border: 1px solid #6d6e71;
+    border-top-color: #373739;
+    background-color: #373739;
+    opacity: 0;
+}
+
+/* Up arrow */
+.ie8 .tooltip:after {
+    content: ' ';
+    position: absolute;
+    top: -10px;
+    left: 15px;
+    display: block;
+    width: 0;
+    height: 0;
+    margin-left: -10px;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #373739;
+    border-left: 10px solid transparent;
+}
+
+/* Toggled by jQuery for show/hide */
+.ie8 .tooltip.isVisible {
+    overflow: visible;
+    clip: inherit; /* `clip: auto` doesn't work in IE8 */
+    width: auto;
+    height: auto;
+    opacity: 1;
+}
+
+.ie8 span.la-Warning {
+    margin: 7px 0 0 10px;
+}
+
+/*IE8 can only get the desktop view. Prevent the body becoming smaller (with horizontal scrolling instead) */
+.ie8 body {
+    min-width: 760px;
+}
+
+.ie8 #btt {
+    bottom: 70px;
+}

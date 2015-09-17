@@ -1,0 +1,78 @@
+/*------------------------- Wizard steps indicator*/
+
+.steps {
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    width: 100%;
+    & li {
+        position: relative;
+        -ms-flex: 1;
+        -webkit-box-flex: 1;
+        -webkit-flex: 1;
+        flex: 1;
+        list-style: none;
+        counter-increment: steps;
+        background-color: #f4f4f5;
+        font-family: @headings-font-family;
+        .font-size(15px);
+        line-height: 1;
+        white-space: nowrap;
+        padding: 23px 10px;
+        border: 1px solid #bcbec0;
+        border-right: 0;
+        &:first-child {
+            border-radius: 4px 0 0 4px;
+        }
+        &:last-child {
+            border-right: 1px solid #bcbec0;
+            border-radius: 0 4px 4px 0;
+            &:after {
+                content: none;
+            }
+        }
+        & span {
+            visibility: hidden;
+        }
+        & a:before {
+            content: counter(steps, decimal)'. ';
+            color: #373739;
+        }
+        &.current/*arrows on current step; using rotate because no need for IE8+9 support*/
+        &.current {
+            min-width: 100px;
+            background-color: #fff;
+            & span {
+                visibility: visible;
+            }
+            &:after {
+                background-color: #fff;
+                content: ' ';
+                position: absolute;
+                top: 9px;
+                right: -23px;
+                z-index: 1;
+                width: 43px;
+                height: 43px;
+                border: 1px solid #bcbec0;
+                border-width: 1px 1px 0 0;
+                -ms-transform: rotate(45deg);
+                -webkit-transform: rotate(45deg);
+                transform: rotate(45deg);
+            }
+            & a {
+                &:before {
+                    color: #ed1c24;
+                    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+                }
+            }
+        }
+    }
+}
+
+// !!! \\\
+* a {
+    display: block;
+    text-decoration: none;
+}

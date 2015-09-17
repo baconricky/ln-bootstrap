@@ -1,0 +1,27 @@
+/*-- hide-and-show; menus and similar*/
+
+.supplemental {
+    position: relative;
+    z-index: 0;
+    opacity: 0;
+    height: 0;
+    width: 0;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    -webkit-transition: opacity 0.3s;
+    transition: opacity 0.3s;
+    /*Usually supplemental is next immediate sibling of trigger.
+    If not, trigger will need a 'rel' attribute and supplemental will need an equiv. id, then add class of 'shown' via JS*/
+    .expanded + &, &.shown {
+        clear: left;
+        z-index: auto;
+        opacity: 1;
+        height: auto;
+        width: auto;
+        overflow: visible;
+    }
+    & a:hover {
+        text-decoration: none;
+    }
+}

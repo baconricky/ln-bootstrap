@@ -1,0 +1,913 @@
+//
+// Glyphicons for Bootstrap
+//
+// Since icons are fonts,they can be placed anywhere text is placed and are
+// thus automatically sized to match the surrounding child. To use,create an
+// inline element with the appropriate classes, like so:
+//
+// <a href="#"><span class="glyphicon glyphicon-star"></span> Star</a>
+// Import the fonts
+@font-face {
+    font-family: 'Lexis_Advance_4_2';
+    src:url('@{icon-font-path}@{icon-font-name}.eot');
+    src:url('@{icon-font-path}@{icon-font-name}.eot?#iefix') format('embedded-opentype'), url('@{icon-font-path}@{icon-font-name}.woff2') format('woff2'), url('@{icon-font-path}@{icon-font-name}.woff') format('woff'), url('@{icon-font-path}@{icon-font-name}.ttf') format('truetype'), url('@{icon-font-path}@{icon-font-name}.svg#@{icon-font-svg-id}') format('svg');
+}
+
+// Catchall baseclass
+.icon, .SS_Icon {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Lexis_Advance_4_2';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+/*calendar icon overlaying date field*/
+
+[type="date"] {
+    /*calendar icon overlaying date field*/
+    position: relative;
+}
+
+label {
+    &.la-Calendar {
+        position: relative;
+        &:before {
+            position: absolute;
+            bottom: 23px;
+            left: 142px;
+            .font-size(20px);
+        }
+    }
+}
+
+
+/***************************************************************
+FONTS / ICONS
+***************************************************************/
+
+.icon, .SS_Icon {
+    text-decoration: none;
+}
+
+.icon:before, .icon:after, .SS_Icon:after, .SS_Icon:before {
+    font-family: 'Lexis_Advance_4_2';
+    speak: none;
+    font-style: normal;
+    color: #6d6e71;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    text-decoration: inherit;
+    line-height: 1;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.la-Support {
+    &:before {
+        content: "\e683";
+    }
+}
+
+.la-Profile {
+    &:before {
+        content: "\e684";
+    }
+}
+
+.la-InfoHover {
+    &:before {
+        content: "\e682";
+    }
+}
+
+.la-Dropbox {
+    &:before {
+        content: "\e681";
+    }
+}
+
+.la-HidePane {
+    &:before {
+        content: "\e67f";
+    }
+}
+
+.la-ShowPane {
+    &:before {
+        content: "\e680";
+        color: #0077CC;
+    }
+}
+
+.la-SupplementalContent {
+    &:before {
+        content: "\e67e";
+    }
+}
+
+.la-CopyAdvanced {
+    &:before {
+        content: "\e67b";
+    }
+}
+
+.la-RecycleBin {
+    &:before {
+        content: "\e67c";
+    }
+}
+
+.la-Restore {
+    &:before {
+        content: "\e67d";
+    }
+}
+
+.la-NotApplicable {
+    &:before {
+        content: "\e67a";
+    }
+}
+
+.la-TransactionalRollup {
+    &:before {
+        content: "\e677";
+        color: #77b800;
+    }
+}
+
+.la-ShowLess {
+    &:before {
+        content: "\e678";
+        color: #0077CC;
+    }
+}
+
+.la-ShowMore {
+    &:before {
+        content: "\e679";
+        color: #0077CC;
+    }
+}
+
+.la-leg-citator-available:before {
+    content: "\e672";
+    color: #009ddb;
+}
+
+.la-DecreaseFont {
+    &:before {
+        content: "\e673";
+    }
+}
+
+.la-IncreaseFont {
+    &:before {
+        content: "\e674";
+    }
+}
+
+.la-ListFull {
+    &:before {
+        content: "\e675";
+    }
+}
+
+.la-ListTitleView {
+    &:before {
+        content: "\e676";
+    }
+}
+
+.la-QuickCite {
+    &:before {
+        content: "\e671";
+        color: #ed1c24;
+    }
+}
+
+.la-CaseBase {
+    &:before {
+        content: "\e670";
+        color: #009ddb;
+    }
+}
+
+.la-DraftNow {
+    &:before {
+        content: "\e66f";
+        color: #0076a4;
+    }
+}
+
+.la-Permalink {
+    &:before {
+        content: "\e66e";
+    }
+}
+
+.la-ICWDownArrow {
+    &:before {
+        content: "\e66d";
+    }
+}
+
+.la-MacroDoc {
+    &:before {
+        content: "\e66c";
+    }
+}
+
+.la-SaveUpdates {
+    &:before {
+        content: "\e66a";
+    }
+}
+
+.la-SaveToNewFolder {
+    &:before {
+        content: "\e66b";
+    }
+}
+
+.la-Manage {
+    &:before {
+        content: "\e669";
+    }
+}
+
+.la-MarkAll {
+    &:before {
+        content: "\e667";
+    }
+}
+
+.la-MarkSelected {
+    &:before {
+        content: "\e668";
+    }
+}
+
+.la-Correct {
+    &:before {
+        content: "\e664";
+        color: #77b800;
+    }
+}
+
+.la-ICWArrow {
+    &:before {
+        content: "\e665";
+    }
+}
+
+
+}
+
+.la-Incorrect {
+    &:before {
+        content: "\e666";
+        color: #ed1c24;
+    }
+    .la-Check {
+        &:before {
+            content: "\e663";
+        }
+    }
+}
+
+.la-RemoveClause {
+    &:before {
+        content: "\e661";
+        color: #ed1c24;
+    }
+}
+
+.la-Excel {
+    &:before {
+        content: "\e662";
+        color: #77b800;
+    }
+}
+
+.la-ExpandPane {
+    &:before {
+        content: "\e62c";
+    }
+}
+
+.la-CollapsePane {
+    &:before {
+        content: "\e658";
+    }
+}
+
+.la-More {
+    &:before {
+        content: "\e659";
+    }
+}
+
+.la-Play {
+    &:before {
+        content: "\e65a";
+        color: #77b800;
+    }
+}
+
+.la-Pause {
+    &:before {
+        content: "\e65b";
+    }
+}
+
+.la-Error {
+    &:before {
+        content: "\e65c";
+        color: #ed1c24;
+    }
+}
+
+.la-Delete {
+    &:before {
+        content: "\e65d";
+    }
+}
+
+.la-Warning {
+    &:before {
+        content: "\e65e";
+        color: #ed1c24;
+    }
+}
+
+.la-Word {
+    &:before {
+        content: "\e65f";
+        color: #0076a4;
+    }
+}
+
+.la-SaveBadge:before, .la-SaveBadgeAfter:after {
+    content: "\e660";
+    color: #4f7b00;
+}
+
+.la-Clause {
+    &:before {
+        content: "\e623";
+    }
+}
+
+.la-ZoomOut {
+    &:before {
+        content: "\e600";
+    }
+}
+
+.la-ZoomIn {
+    &:before {
+        content: "\e601";
+    }
+}
+
+.la-VSA {
+    &:before {
+        content: "\e602";
+    }
+}
+
+.la-UpdateFailed {
+    &:before {
+        content: "\e603";
+        color: #ed1c24;
+    }
+}
+
+.la-Update {
+    &:before {
+        content: "\e604";
+    }
+}
+
+.la-Unsubscribe {
+    &:before {
+        content: "\e605";
+    }
+}
+
+.la-UnspecifiedSource {
+    &:before {
+        content: "\e606";
+    }
+}
+
+.la-TriangleUp {
+    &:before {
+        content: "\e607";
+    }
+}
+
+.la-TriangleRight:before, .SS_TriangleRight:before {
+    content: "\e608";
+    -webkit-transition: -webkit-transform linear 0.2s;
+    transition: -webkit-transform linear 0.2s;
+    transition: transform linear 0.2s;
+}
+
+.la-TriangleRightAfter:after, .SS_TriangleRight:after {
+    content: "\e608";
+}
+
+.shown {
+    & .la-TriangleRight, & .SS_TriangleRight {
+        &:before {
+            -ms-transform: rotate(90deg);
+            -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+        }
+    }
+}
+
+.la-TriangleLeft {
+    &:before {
+        content: "\e609";
+    }
+}
+
+.la-TriangleDownAfter, .SS_TriangleDown, .la-TriangleDown {
+    &:before, &:after, :after {
+        content: "\e60a";
+    }
+}
+
+.la-Topics {
+    &:before {
+        content: "\e60b";
+    }
+}
+
+.la-TableOfContents {
+    &:before {
+        content: "\e60c";
+    }
+}
+
+.la-Sources {
+    &:before {
+        content: "\e60d";
+    }
+}
+
+.la-ShepWarningStat {
+    &:before {
+        content: "\e60e";
+        color: #ed1c24;
+    }
+}
+
+.la-ShepWarning {
+    &:before {
+        content: "\e60f";
+        color: #ed1c24;
+    }
+}
+
+.la-ShepTrailHighlight {
+    &:before {
+        content: "\e610";
+    }
+}
+
+.la-ShepSignalError {
+    &:before {
+        content: "\e611";
+        color: #8f2b8c;
+    }
+}
+
+.la-ShepQuestioned {
+    &:before {
+        content: "\e612";
+        color: #e98310;
+    }
+}
+
+.la-ShepPositive {
+    &:before {
+        content: "\e613";
+        color: #9ecc49;
+    }
+}
+
+.la-ShepInfo {
+    &:before {
+        content: "\e614";
+        color: #88ddfe;
+    }
+}
+
+.la-ShepCaution {
+    &:before {
+        content: "\e615";
+        color: #fddc00;
+    }
+}
+
+.la-Shepards {
+    &:before {
+        content: "\e616";
+        color: #be161d;
+    }
+}
+
+.la-ShepardizedCite {
+    &:before {
+        content: "\e617";
+    }
+}
+
+.la-ShepAnalysis {
+    &:before {
+        content: "\e618";
+        color: #0076a4;
+    }
+}
+
+.la-SharedByOthers {
+    &:before {
+        content: "\e619";
+    }
+}
+
+.la-SharedByMe {
+    &:before {
+        content: "\e61a";
+    }
+}
+
+.la-Search {
+    &:before {
+        content: "\e61b";
+    }
+}
+
+.la-SavedToFolder {
+    &:before {
+        content: "\e61c";
+    }
+}
+
+.la-ResearchMap {
+    &:before {
+        content: "\e61d";
+    }
+}
+
+.la-RecentlyViewed {
+    &:before {
+        content: "\e61e";
+    }
+}
+
+.la-ProfileSuite {
+    &:before {
+        content: "\e61f";
+    }
+}
+
+.la-ProductSelectChevron {
+    &:before {
+        content: "\e620";
+    }
+}
+
+.la-PrintablePage {
+    &:before {
+        content: "\e621";
+    }
+}
+
+.la-Print {
+    &:before {
+        content: "\e622";
+    }
+}
+
+.la-PDF {
+    &:before {
+        content: "\e624";
+        color: #be161d;
+    }
+}
+
+.la-Options {
+    &:before {
+        content: "\e625";
+    }
+}
+
+.la-Notifications {
+    &:before {
+        content: "\e626";
+    }
+}
+
+.la-Notes {
+    &:before {
+        content: "\e627";
+    }
+}
+
+.la-NewUpdates {
+    &:before {
+        content: "\e628";
+        color: #009ddb;
+    }
+}
+
+.la-News {
+    &:before {
+        content: "\e629";
+    }
+}
+
+.la-NativeView {
+    &:before {
+        content: "\e62a";
+    }
+}
+
+.la-Move {
+    &:before {
+        content: "\e62b";
+    }
+}
+
+.la-MedMal {
+    &:before {
+        content: "\e62d";
+    }
+}
+
+.la-MarginNote {
+    &:before {
+        content: "\e62e";
+    }
+}
+
+.la-LPAAndLNPG {
+    &:before {
+        content: "\e62f";
+    }
+}
+
+.la-LockedNote {
+    &:before {
+        content: "\e630";
+    }
+}
+
+.la-ListView {
+    &:before {
+        content: "\e631";
+    }
+}
+
+.la-LegislativeAlerts {
+    &:before {
+        content: "\e632";
+    }
+}
+
+.la-LegalTopicSummary {
+    &:before {
+        content: "\e633";
+        color: #e98310;
+    }
+}
+
+.la-LegalIssueTrail {
+    &:before {
+        content: "\e634";
+    }
+}
+
+.la-LastColumn {
+    &:before {
+        content: "\e635";
+    }
+}
+
+.la-JumpUp {
+    &:before {
+        content: "\e636";
+    }
+}
+
+.la-JumpToTop {
+    &:before {
+        content: "\e637";
+    }
+}
+
+.la-JumpDown {
+    &:before {
+        content: "\e638";
+    }
+}
+
+.la-Info {
+    &:before {
+        content: "\e639";
+    }
+}
+
+.la-IncludeLegalPhraseEq {
+    &:before {
+        content: "\e63a";
+    }
+}
+
+.la-History {
+    &:before {
+        content: "\e63b";
+    }
+}
+
+.la-Highlight {
+    &:before {
+        content: "\e63c";
+    }
+}
+
+.la-FullScreen {
+    &:before {
+        content: "\e63d";
+    }
+}
+
+.la-Folder {
+    &:before {
+        content: "\e63e";
+    }
+}
+
+.la-FirstColumn {
+    &:before {
+        content: "\e63f";
+    }
+}
+
+.la-Filter {
+    &:before {
+        content: "\e640";
+    }
+}
+
+.la-FavoriteFull {
+    &:before {
+        content: "\e641";
+        color: #ed9838;
+    }
+}
+
+.la-FavoriteEmpty {
+    &:before {
+        content: "\e642";
+    }
+}
+
+.la-ExternalLink {
+    &:before, &:after {
+        content: "\e643";
+    }
+}
+
+.la-Explore {
+    &:before {
+        content: "\e644";
+    }
+}
+
+.la-ExcludeLegalPhraseEq {
+    &:before {
+        content: "\e645";
+    }
+}
+
+.la-EntitySearch {
+    &:before {
+        content: "\e646";
+    }
+}
+
+.la-Email {
+    &:before {
+        content: "\e647";
+    }
+}
+
+.la-Edit {
+    &:before {
+        content: "\e648";
+    }
+}
+
+.la-Download {
+    &:before {
+        content: "\e649";
+    }
+}
+
+.la-DocumentList {
+    &:before {
+        content: "\e64a";
+    }
+}
+
+.la-Document {
+    &:before {
+        content: "\e64b";
+    }
+}
+
+.la-CopyToFolder {
+    &:before {
+        content: "\e64c";
+    }
+}
+
+.la-Copy {
+    &:before {
+        content: "\e64d";
+    }
+}
+
+.la-ContentType {
+    &:before {
+        content: "\e64e";
+    }
+}
+
+.la-CloseRemove {
+    &:before {
+        content: "\e64f";
+    }
+}
+
+.la-Calendar {
+    &:before {
+        content: "\e650";
+    }
+}
+
+.la-ArrowUp {
+    &:before {
+        content: "\e651";
+    }
+}
+
+.la-ArrowLeft {
+    &:before {
+        content: "\e652";
+    }
+}
+
+.la-Annotation {
+    &:before {
+        content: "\e653";
+    }
+}
+
+.la-Alerts {
+    &:before {
+        content: "\e654";
+    }
+}
+
+.la-AddToSearch {
+    &:before {
+        content: "\e655";
+    }
+}
+
+.la-AccessLater {
+    &:before, la-AcessLater:before {
+        content: "\e656";
+    }
+}
+
+.la-AccessNow {
+    &:before {
+        content: "\e657";
+    }
+}

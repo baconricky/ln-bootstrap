@@ -1,0 +1,50 @@
+body {
+    font-size: 14px;
+    font-size: 1.4rem;
+    font-family: Helvetica, Arial, sans-serif;
+    color: #373739;
+    & > .wrapper {
+        position: relative;
+    }
+}
+
+.pagewrapper {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+/***************************************************************
+Jump to top
+***************************************************************/
+
+.la-JumpToTop {
+    width: 46px;
+    height: 46px;
+    background-color: #525355;
+    text-decoration: none;
+    border-radius: 2px;
+    border: solid 1px #525355;
+    &:before {
+        color: #fff;
+        .font-size(30px);
+    }
+    &:hover, &:focus {
+        background-color: #ed1c24;
+        border-color: #ed1c24;
+    }
+    &:active {
+        background-color: #fff;
+    }
+    &:active::before {
+        color: #ed1c24;
+    }
+}
+
+#btt {
+    position: fixed;
+    right: 15px;
+    bottom: 45px;
+    z-index: 999;
+}

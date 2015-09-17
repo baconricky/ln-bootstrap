@@ -1,0 +1,119 @@
+@media screen and (min-width: 760px) {
+    /* Opaque screen cover */
+    .overlay {
+        background-color: rgba(255,255,255,0.6);
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 49;
+    }
+
+    /* tooltips */
+    .has_tooltip {
+        position: relative;
+        overflow: visible;
+    }
+
+    .has_tooltip:hover {
+        z-index: 1;
+    }
+
+    .tooltip {
+        position: absolute;
+        z-index: 2;
+        top: 110%;
+        top: calc(100% + 5px);
+        left: 50%;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        box-sizing: border-box;
+        width: 1px;
+        height: 1px;
+        padding: 10px 15px;
+        cursor: default;
+        transition: opacity .3s ease-in .3s;
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        transform: translateX(-50%);
+        color: #fff;
+        font-family: Helvetica, Arial, sans-serif;
+        .font-size(14px);
+        text-align: center;
+        white-space: nowrap;
+        border: 1px solid #6d6e71;
+        border-top-color: #373739;
+        background-color: #373739;
+        box-shadow: 1px 1px 2px rgba(0, 0, 0, .15);
+        text-shadow: none;
+        opacity: 0;
+    }
+
+    /* Up arrow */
+    .tooltip:after {
+        content: ' ';
+        position: absolute;
+        top: -10px;
+        left: 50%;
+        display: block;
+        width: 0;
+        height: 0;
+        margin-left: -10px;
+        border-right: 10px solid transparent;
+        border-bottom: 10px solid #373739;
+        border-left: 10px solid transparent;
+        pointer-events: none;
+    }
+
+    /* Toggled by jQuery for show/hide */
+    .tooltip.isVisible {
+        overflow: visible;
+        clip: auto;
+        width: auto;
+        height: auto;
+        opacity: 1;
+    }
+
+    /*------------------------- Wizard steps indicator*/
+
+    .steps li {
+        padding: 23px 10px 23px 52px;
+    }
+
+    /*arrows between all; using rotate because no need for IE8+9 support*/
+    .steps li:after {
+        content: ' ';
+        position: absolute;
+        top: 9px;
+        right: -23px;
+        z-index: 1;
+        width: 43px;
+        height: 43px;
+        border: 1px solid #bcbec0;
+        border-width: 1px 1px 0 0;
+        -ms-transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+
+    .steps li:after {
+        background: #f4f4f5;
+    }
+
+    .steps li:last-child:after {
+        content: none;
+    }
+
+    .steps li span {
+        visibility: visible;
+    }
+
+    span.la-Warning {
+        margin: 7px 0 0 10px;
+    }
+
+    #btt {
+        bottom: 70px;
+    }
+}

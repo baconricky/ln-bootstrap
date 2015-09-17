@@ -1,0 +1,106 @@
+/***************************************************************
+  ANIMATIONS
+***************************************************************/
+@-webkit-keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes wobble {
+    0% {
+        -webkit-transform: translate(0,-5px);
+    }
+
+    25% {
+        -webkit-transform: translate(0,5px);
+    }
+
+    50% {
+        -webkit-transform: translate(0,-5px);
+    }
+
+    100% {
+        -webkit-transform: translate(0,5px);
+    }
+}
+
+@keyframes wobble {
+    0% {
+        transform: translate(0,-5px);
+    }
+
+    25% {
+        transform: translate(0,5px);
+    }
+
+    50% {
+        transform: translate(0,-5px);
+    }
+
+    100% {
+        transform: translate(0,5px);
+    }
+}
+
+@-webkit-keyframes toast {
+    0% {
+        top: -200px;
+        opacity: 0;
+    }
+
+    100% {
+        top: -3px;
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes toast-reversed {
+    0% {
+        top: -3px;
+        opacity: 1;
+    }
+
+    100% {
+        top: -200px;
+        opacity: 0;
+    }
+}
+
+@keyframes toast {
+    0% {
+        top: -200px;
+        opacity: 0;
+    }
+
+    100% {
+        top: -3px;
+        opacity: 1;
+    }
+}
+
+@keyframes toast-reversed {
+    0% {
+        top: -3px;
+        opacity: 1;
+    }
+
+    100% {
+        top: -200px;
+        opacity: 0;
+    }
+}

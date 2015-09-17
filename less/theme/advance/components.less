@@ -1,0 +1,20 @@
+/*------------------- components */
+.comp:after {
+    content: ".";
+    display: block;
+    height: 0px;
+    .font-size(0px);
+    visibility: hidden;
+    overflow: hidden;
+    clear: both;
+    border-style: none !important; /*ie8*/
+    padding: 0px !important; /*ie8*/
+}
+
+.hidden {
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+}

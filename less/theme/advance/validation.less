@@ -1,0 +1,60 @@
+/*--------------------- form validation*/
+
+/*top-of-form validation error text*/
+.validation.form-level.la-Error {
+    position: relative;
+    min-height: 40px;
+    background-color: #fde9e9;
+    padding: 20px 18px 20px 70px;
+    border: 1px solid #ed1c24;
+}
+
+.validation.form-level.la-Error:before {
+    position: absolute;
+    top: 16px;
+    left: 20px;
+    color: #ed1c24;
+    .font-size(35px);
+}
+
+.validation.form-level p {
+    max-width: 85em;
+    margin-bottom: 15px;
+}
+
+.validation.form-level :last-child {
+    margin-bottom: 0;
+}
+
+.validation.form-level .error-field {
+    color: #ed1c24;
+    font-weight: 700;
+}
+
+/*field-level validation errors*/
+
+.field-level {
+    display: block;
+    color: #ed1c24;
+    .font-size(14px);
+
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 16px 0;
+}
+
+.invalid,
+.invalid textarea,
+.invalid select {
+    float: left;
+    border-color: #ed1c24;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 2px rgba(237, 28, 36, 0.6);
+}
+
+span.la-Warning {
+    float: left;
+    margin: 22px 0 0 10px;
+}
+
+span.la-Warning:after {
+    color: #ed1c24;
+}
